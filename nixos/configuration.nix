@@ -73,8 +73,10 @@
   # only use if you have no head
   services.openssh = {
     enable = true;
-    permitRootLogin = "no"; # i ground up all the trees in a 50 kilometre radius
-    passwordAuthentication = false;
+    settings = {
+      PermitRootLogin = "no"; # i ground up all the trees in a 50 kilometre radius
+      PasswordAuthentication = false;
+    };
   };
 
   # BRIAN, WHAT DID I TELL YOU ABOUT ALTERING THE PAST?!
